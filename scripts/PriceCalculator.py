@@ -101,7 +101,7 @@ def get_service_discount(current_date, discount):
     else:
         start_date = string_to_date("1970-01-01")
 
-    if discount["start_date"]:
+    if discount["end_date"]:
         end_date = string_to_date(discount["end_date"])
     else:
         end_date = string_to_date("2999-01-01")
